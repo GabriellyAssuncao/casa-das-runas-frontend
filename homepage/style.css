@@ -142,3 +142,43 @@ h1 {
     left: 250px;
     right: center;
 }
+
+.circulo_1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #B79E80;
+  position: relative;
+  top: -200px;
+  left: 850px;
+}
+
+.circulo_2 {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #B79E80;
+   position: relative;
+   top: -150px;
+   left: 850px;
+}
+
+.circulo_3 {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #B79E80;
+   position: relative;
+   top: -850px;
+   left: 1200px;
+}
+
+.circulo_4 {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   background-color: #B79E80;
+   position: relative;
+   top: -800px;
+   left: 1200px;
+}  
