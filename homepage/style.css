@@ -1,0 +1,107 @@
+/* Estilos CSS para a página */
+         
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #070707;
+    overflow-x: hidden;/* impede a rolagem horizontal */
+}
+
+header {
+    background-color: #1E1E1E;
+    padding: 10px;
+    color: #eeece9;
+    display: flex; /* Adicionado para alinhar os elementos horizontalmente */
+    align-items: center;
+    justify-content: space-between;
+    width: 1678.01px;
+    height: 50px;
+    left: 51px;
+    top: 5px;
+
+}
+
+h1 {
+    margin: 140px;
+    font-size: 30px;
+  
+    color: #816347;
+    
+
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.title-container h1 {
+    margin-right: 700px;
+   
+} 
+
+.logo {
+    width: 40px; /* Defina a largura desejada para a imagem */
+   
+}
+
+.potions {
+    margin-right: 50px; /* Move o elemento para o canto direito */ 
+    font-size: 14px;
+    font-family: 'Grenze';
+    
+}
+.feitiços{
+    margin-right: 50px;
+    font-size: 14px;
+    font-family: 'Grenze';
+
+}
+.conta {
+    margin-right: auto;
+    font-size: 14px;
+    font-family: 'Grenze';
+}
+.descriçao {
+    font-family: 'Grenze';
+    font-weight: normal;
+    font-size: 40px;
+    color: #050505;
+    background-color: #EE4D1B;
+    height: 400px;
+    position: relative;
+    top: 60px;
+    left: 700px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex;
+    align-items: flex;
+    padding-left: 100px;
+    padding-top: 100px;
+    text-align: center;
+    
+}
+.caixa {
+    background-color: #EE4D1B;
+    height: 96px;
+    position: relative;
+    top: 90px;
+    left: 700px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+.início {
+    font-size: 25px;
+    color: #eeece9;
+    position: relative;
+    top: -350px;
+    left: 250px;
+}
+
+
