@@ -113,4 +113,32 @@ h1 {
     right: center;
 }
 
+/* parte dos produtos*/
+.seta_2 {
+    background-color: #816347;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 50px;
+    left: 250px;
+    right: center;
 
+}
+
+.Produtos {
+    font-size: 25px;
+    color: #eeece9;
+    position: relative;
+    top: 250px;
+    left: 220px;
+}
+
+.seta_3 {
+    background-color: #816347;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 450px;
+    left: 250px;
+    right: center;
+}
