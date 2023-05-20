@@ -48,13 +48,13 @@ h1 {
 }
 
 .potions {
-    margin-right: 50px; /* Move o elemento para o canto direito */ 
+    margin-right: 60px; /* Move o elemento para o canto direito */ 
     font-size: 14px;
     font-family: 'Grenze';
     
 }
 .feitiços{
-    margin-right: 50px;
+    margin-right: 60px;
     font-size: 14px;
     font-family: 'Grenze';
 
@@ -102,6 +102,15 @@ h1 {
     position: relative;
     top: -350px;
     left: 250px;
+}
+.Seta {
+    background-color: #816347;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -150px;
+    left: 250px;
+    right: center;
 }
 
 
