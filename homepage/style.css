@@ -182,3 +182,61 @@ h1 {
    top: -800px;
    left: 1200px;
 }  
+/*parte das avaliaçoes*/
+.seta_4 {
+    background-color: #816347;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -550px;
+    left: 250px;
+    right: center;
+}
+
+.avaliaçoes {
+    font-size: 25px;
+    color: #eeece9;
+    position: relative;
+    top: -350px;
+    left: 220px;
+}
+
+.seta_5 {
+    background-color: #816347;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -150px;
+    left: 250px;
+    right: center;
+}
+
+.box_aval_1 {
+  width: 600px;
+  height: 120px;
+  background-color: #eeebea;
+  border-radius: 10px;
+  position: relative;
+  top: -700px;
+  left: 800px;
+}
+
+.box_aval_2 {
+  width: 600px;
+  height: 120px;
+  background-color: #eeebea;
+  border-radius: 10px;
+  position: relative;
+  top: -670px;
+  left: 800px;
+}
+
+.box_aval_3 {
+  width: 600px;
+  height: 120px;
+  background-color: #eeebea;
+  border-radius: 10px;
+  position: relative;
+  top: -640px;
+  left: 800px;
+}
