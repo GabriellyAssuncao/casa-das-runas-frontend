@@ -15,7 +15,7 @@ header {
     display: flex; /* Adicionado para alinhar os elementos horizontalmente */
     align-items: center;
     justify-content: space-between;
-    width: 1678.01px;
+    width: 100%;
     height: 50px;
     left: 51px;
     top: 5px;
@@ -239,4 +239,42 @@ h1 {
   position: relative;
   top: -640px;
   left: 800px;
+}
+/* Parte do entre em contato */
+.seta_6 {
+    background-color: #816347;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -300px;
+    left: 250px;
+    right: center;
+}
+
+.contato{
+    font-size: 25px;
+    color: #eeece9;
+    position: relative;
+    top: -200px;
+    left: 220px;
+}
+
+.rodape {
+    background-color: #816347;
+    height: 25px;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    left: 0;
+    right: center;
+}
+
+.texto {
+    color: #eeebea;
+    font-size: 30px;
+    font-family: 'Grenze';
+    position: relative;
+    top: -470px;
+    left: 800px;
+    overflow-y: auto;
 }
