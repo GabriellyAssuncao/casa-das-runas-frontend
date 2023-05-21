@@ -6,5 +6,8 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Grenze', serif;
+
+        text-decoration: none;
+        color: inherit;
     }
 `
