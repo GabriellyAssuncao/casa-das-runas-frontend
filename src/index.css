@@ -1,13 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: url(../src/img/Frame.png);
+}
+
+.login .logos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.login .bx {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #b79e80;
+  width: 40rem;
+  height: 37rem;
+  border-radius: 20px;
+}
+
+.login img {
+  width: 90px;
+  height: 90px;
+}
+
+.login span img {
+  width: 350px;
+  height: 80px;
+  margin: 20px;
+}
+
+.login h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.login label {
+  font-size: 35px;
+  padding: 10px;
+}
+
+.bx input[type="text"] {
+  border: none;
+  width: 450px;
+  height: 50px;
+  background-color: #ffff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  color: 0000;
+}
+
+.bx input[type="password"] {
+  border: none;
+  width: 450px;
+  height: 50px;
+  background-color: #ffff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  color: 0000;
+  margin-bottom: 40px;
+}
+
+.bx button {
+  text-align: center;
+  width: 170px;
+  height: 60px;
+  outline: none;
+  border: 3px solid #000;
+  border-radius: 5px;
+  font-size: 36px;
+  background-color: #816347;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.bx button:hover {
+  background-color: #523c28;
+}
+
+.bx .links {
+  display: flex;
+  gap: 15px;
+}
+
+.bx .links p {
+  font-weight: 400;
+  font-size: 30px;
 }
