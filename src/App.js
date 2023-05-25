@@ -1,7 +1,7 @@
 import { GlobalStyle } from "./styles/global";
 import Header from "./components/header";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Login from "./components/Registration/Login";
+import Register from "./components/Registration/Register";
 import { Routes, Route} from "react-router-dom";
 
 function App() {
