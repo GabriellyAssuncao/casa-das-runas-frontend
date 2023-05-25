@@ -24,7 +24,7 @@ function Register() {
         </div>
         <div className="bx">
           <h1 style={{ margin: '0'}}>Criar sua Conta:</h1>
-          <label>Usuário</label>
+          <label>Usuário:</label>
           <div className="inputs-rgs">
           <input
           type='text'
