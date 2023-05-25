@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Register/>
+      <Login/>
       <Routes>
        <Route path="Register" element={<Register/>}></Route>
        <Route path="Login" element={<Login/>}></Route>
