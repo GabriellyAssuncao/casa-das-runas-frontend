@@ -15,7 +15,7 @@ function Login() {
     }
     
   return (
-        <div className='login'>
+        <div className='registration'>
             <form onSubmit={handleSubmit}>
             <div className='logos'>
               <img src={logo}></img>
@@ -23,6 +23,7 @@ function Login() {
             </div>
             <div className='bx'>
               <h1>Login</h1>
+              <div className="inputs-lgn">
               <label>Usuário:</label>
               <input
               placeholder='Enter Your Username'
@@ -37,10 +38,11 @@ function Login() {
               value={password}
               onChange={e => setPassword(e.target.value)}
               />
-              <button>Entrar</button>
+              <Link to={'Header'}><button type='submit'>Entrar</button></Link>
               <div className='links'>
                 <p>Não possui uma conta ?</p>
                 <Link to={'Register'} style={{color: "red"}}><p>Clique Aqui</p></Link>
+                </div>
               </div>
             </div>
             </form>
