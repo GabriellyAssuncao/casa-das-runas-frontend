@@ -89,6 +89,7 @@ code {
   border-radius: 5px;
   font-size: 20px;
   color: 0000;
+  padding: 10px;
 }
 
 .bx .inputs-lgn input[type="password"] {
@@ -101,6 +102,7 @@ code {
   font-size: 20px;
   color: 0000;
   margin-bottom: 40px;
+  padding: 10px;
 }
 
 .bx button {
@@ -152,6 +154,7 @@ code {
   border-radius: 5px;
   font-size: 20px;
   color: 0000;
+  padding: 10px;
 }
 
 .bx .inputs-rgs input[type="password"] {
@@ -163,6 +166,7 @@ code {
   border-radius: 5px;
   font-size: 20px;
   color: 0000;
+  padding: 10px;
 }
 
 .inputs-rgs button {
