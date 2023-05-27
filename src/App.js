@@ -1,5 +1,17 @@
+import { GlobalStyle } from "./styles/global";
+import Header from "./components/header/Header";
+import Login from "./components/Registration/Login";
+import Register from "./components/Registration/Register";
+
+
 function App() {
-  return <h1>página</h1>
+
+  return (
+    <>
+      <GlobalStyle />
+      <Login/>
+    </>
+  )
 }
 
 export default App;
