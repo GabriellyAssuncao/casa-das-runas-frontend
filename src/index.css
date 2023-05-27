@@ -18,15 +18,20 @@ code {
   box-sizing: border-box;
 }
 
-.registration {
+body {
   width: 100%;
   height: 100vh;
-  background-color: #1e1e1e;
+  background-image: url(../src/img/Frame.png);
+}
+
+.registration {
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-image: url(../src/img/Frame.png);
+  padding: 15px;
 }
 
 .registration .logos {
@@ -43,7 +48,7 @@ code {
   text-align: center;
   flex-direction: column;
   background-color: #b79e80;
-  width: 40rem;
+  max-width: 40rem;
   height: 37rem;
   border-radius: 20px;
 }
@@ -171,4 +176,58 @@ code {
 
 .inputs-rgs button {
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .registration {
+    padding: 15px;
+  }
+  .registration .bx {
+    width: 24rem;
+    height: 35rem;
+  }
+
+  .bx .inputs-rgs input[type="text"] {
+    width: 300px;
+  }
+
+  .bx .inputs-rgs input[type="password"] {
+    width: 300px;
+  }
+
+  .registration span img {
+    margin: 0;
+    padding: 10px 0px;
+    width: 80%;
+  }
+
+  .registration label {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .inputs-rgs button {
+    margin-top: 40px;
+  }
+
+  .bx button {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bx .inputs-lgn input[type="text"] {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  .bx .inputs-lgn input[type="password"] {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  .bx .links p {
+    font-size: 20px;
+  }
 }
