@@ -38,10 +38,10 @@ function Login() {
               value={password}
               onChange={e => setPassword(e.target.value)}
               />
-              <Link to={'Header'}><button type='submit'>Entrar</button></Link>
+             <button type='submit'>Entrar</button>
               <div className='links'>
                 <p>Não possui uma conta ?</p>
-                <Link to={'Register'} style={{color: "red"}}><p>Clique Aqui</p></Link>
+              <p style={{color: "red"}}>Clique Aqui</p>
                 </div>
               </div>
             </div>
