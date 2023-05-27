@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom';
 import logo from "/Users/natejpg/Workspace/casa-das-runas-frontend/src/img/logo.png"
 import mask from "/Users/natejpg/Workspace/casa-das-runas-frontend/src/img/Mask group.png"
 
