@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import logo from "/Users/natejpg/Workspace/casa-das-runas-frontend/src/img/logo.png"
-import mask from "/Users/natejpg/Workspace/casa-das-runas-frontend/src/img/Mask group.png"
+import logo from "../../img/logo.png"
+import mask from "../../img/nome.png"
 
 function Login() {
 
