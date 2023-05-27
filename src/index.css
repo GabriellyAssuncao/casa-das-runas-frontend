@@ -185,6 +185,7 @@ body {
   .registration .bx {
     width: 24rem;
     height: 35rem;
+    margin: 20px;
   }
 
   .bx .inputs-rgs input[type="text"] {
