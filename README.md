@@ -5,7 +5,9 @@ Casa das Runas é um e-commerce com tema medieval desenvolvidos por alunos de en
 ## Para executar o aplicativo
 
 - Fazer o clone dos repositórios:
-Backend:
-Frontend:
+
+Backend: https://github.com/GabriellyAssuncao/casa-das-runas
+
+Frontend: https://github.com/GabriellyAssuncao/casa-das-runas-frontend
 
 ### Tutorial de instalação do Docker e Docker-compose
