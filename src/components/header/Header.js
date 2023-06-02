@@ -4,18 +4,22 @@ import nome from '../../img/nome.png'
 
 const Header = () => {
     return (
-        <C.HeaderStyle>
-            <C.LogoTipo>
+        < div className='header'>
+            <C.LogoTipo className='logo'>
+            <div className="img-header">
                 <img src={logo} alt="logo"/>
-                <img src={nome} alt="nome"/>
+                </div>
+                <div className="title">
+                   <img src={nome} alt="nome"/>
+                </div>
             </C.LogoTipo>
 
-            <C.Navigation>
+            <C.Navigation className='nav'>
                 <li><a href='#'>Poções</a></li>
                 <li><a href='#'>Feitiços</a></li>
-                <li><a>Conta</a></li>
+                <li><a href='#'>Conta</a></li>
             </C.Navigation>
-        </C.HeaderStyle>
+        </div>
     );
 }
 
