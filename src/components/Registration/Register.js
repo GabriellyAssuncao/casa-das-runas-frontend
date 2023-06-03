@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import logo from "../../img/logo.png"
-import mask from "../../img/Mask group.png"
+import logo from "../../images/logo.png"
+import mask from "../../images/Mask group.png"
 
 function Register() {
 
