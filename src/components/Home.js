@@ -1,26 +1,39 @@
 import React from 'react'
 import Header from './header/Header'
-import iconpagesdown from "../img/iconpagesdown.png"
-import desenhowrapper from "../img/desenhowrapper.png"
+import iconpagedown from "../images/iconpagesdown.png"
+import iconpageup from "../images/iconpagesup.png"
+import desenhowrapper from "../images/desenhowrapper.png"
+import circle from "../images/circle.png"
+import Data from './Data'
+import Card from './Card'
 
 function Home() {
 
-  
-  /*
-  window.addEventListener("scroll", function ()  {
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0)
-  })
+ const randomIndices = Array.from({ length: 3 }, () =>
+  Math.floor(Math.random() * Data.length)
+);
 
-  */
+const cards = randomIndices.map((randomIndex, index) => {
+  const randomItem = Data[randomIndex];
+
+  return (
+    <div key={randomItem.id}>
+      <Card
+        name={randomItem.name}
+        opinion={randomItem.opinion}
+      />
+    </div>
+  );
+});
 
   return (
     <div>
         <Header/>
-            <div className="home"> <div className="inicio-container">
-                  <div className='inicio-wrapper'>
+            <div className="home"> 
+            <div className="text-container">
+                  <div className='text-wrapper'>
                     <h1>Início</h1>
-                    <button className='btn-move'><img src={iconpagesdown}/></button>
+                    <button className='btn-move'><img src={iconpagedown}/></button>
                   </div>
                 </div>
                 <div className="chart-container">
@@ -35,13 +48,58 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="produtos">
-              <div className="test">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis cumque 
-                veniam quasi eaque velit quo et suscipit fugiat deserunt at, quis consequatur, 
-                sed deleniti. Delectus vel cupiditate veniam optio repellendus.
+              <div className="products">
+                <div className="text-container">
+                    <div className="text-wrapper">
+                    <button className='btn-move'><img src={iconpageup}/></button>
+                    <h1>Produtos</h1>
+                    <button className='btn-move'><img src={iconpagedown}/></button>
+                </div>
+                </div>
+                <div className="products-container">
+                  <div className="block-1">
+                     <img src={circle}></img>
+                     <img src={circle}></img>
+                 </div>
+                  <div className="block-2">
+                     <img src={circle}></img>
+                     <img src={circle}></img>
+                  </div>
+                  </div>
               </div>
-            </div>
+              <div className="avaliacoes">
+                <div className="text-container">
+                  <div className="text-wrapper">
+                  <button className='btn-move'><img src={iconpageup}/></button>
+                    <h1>Avaliações</h1>
+                  <button className='btn-move'><img src={iconpagedown}/></button>
+                  </div>
+                </div>
+                <div className="avaliacoes-container">
+                  <div className="reviews">
+                    {cards}
+                  </div>
+                </div>
+              </div>
+              <div className='contato'>
+                <div className="text-container">
+                  <div className="text-wrapper">
+                  <button className='btn-move'><img src={iconpageup}/></button>
+                    <h1>Entre em Contato</h1>
+                  </div>
+                </div>
+                <div className="contato-container">
+                  <h1>
+                    Em uma noite de lua cheia, deseje do fundo do seu coração 
+                    ajuda para os seus problemas, e clame por socorro de um dos 
+                    magos da casa das runas. 
+                  </h1>
+                  <h1>
+                    Ou mande um e-mail:
+                    casadasrunas@alvorecer.feudal.ds
+                  </h1>
+                </div>
+              </div>
        </div>
   )
 }

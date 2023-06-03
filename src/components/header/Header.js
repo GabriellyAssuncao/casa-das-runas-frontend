@@ -1,8 +1,10 @@
 import * as C from './style.js'
-import logo from '../../img/logo.png'
-import nome from '../../img/nome.png'
+import logo from '../../images/logo.png'
+import nome from '../../images/nome.png'
 
 const Header = () => {
+
+
     return (
         < div className='header'>
             <C.LogoTipo className='logo'>
