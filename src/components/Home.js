@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Header from './header/Header'
 import iconpagedown from "../images/iconpagesdown.png"
 import iconpageup from "../images/iconpagesup.png"
@@ -9,23 +9,33 @@ import Card from './Card'
 
 function Home() {
 
- const randomIndices = Array.from({ length: 3 }, () =>
-  Math.floor(Math.random() * Data.length)
-);
 
-const cards = randomIndices.map((randomIndex, index) => {
-  const randomItem = Data[randomIndex];
+  const randomIndices = [];
 
-  return (
-    <div key={randomItem.id}>
-      <Card
-        name={randomItem.name}
-        opinion={randomItem.opinion}
-      />
-    </div>
-  );
-});
+  while (randomIndices.length < 3) {
+    const randomIndex = Math.floor(Math.random() * Data.length);
+  
+    if (!randomIndices.includes(randomIndex)) {
+      randomIndices.push(randomIndex);
+    }
+  }
+  
+  const cards = randomIndices.map((randomIndex, index) => {
+    const randomItem = Data[randomIndex];
+  
+    return (
+      <div key={index}>
+        <Card
+          img={randomItem.img}
+          name={randomItem.name}
+          opinion={randomItem.opinion}
+        />
+      </div>
+    );
+  });
 
+
+  
   return (
     <div>
         <Header/>

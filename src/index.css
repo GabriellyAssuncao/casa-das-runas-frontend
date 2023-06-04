@@ -24,6 +24,8 @@ body {
 .header {
   height: 13vh;
   width: 100vw;
+  position: sticky;
+  z-index: 9999;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -31,10 +33,6 @@ body {
   justify-content: space-between;
   padding: 0px 121px;
   background-color: rgb(28, 28, 28);
-}
-
-.header.sticky::before {
-  display: none;
 }
 
 .test {
@@ -192,22 +190,6 @@ body {
   padding: 25px;
 }
 
-.imgBx {
-  max-width: 150px;
-  max-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid blue;
-  height: 100%;
-  width: 100%;
-}
-
-.imgBx img {
-  max-width: 150px;
-  max-height: 150px;
-}
-
 .reviewBx {
   display: flex;
   align-items: center;
@@ -219,6 +201,23 @@ body {
   border-radius: 10px;
 }
 
+.imgBx {
+  max-width: 200px;
+  max-height: 100%;
+  display: flex;
+  object-fit: fill;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.imgBx img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 .text-review-bx {
   display: flex;
   width: 100%;
@@ -227,7 +226,7 @@ body {
 }
 
 .text-review-bx h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .text-review-bx p {
   font-size: 1.3rem;

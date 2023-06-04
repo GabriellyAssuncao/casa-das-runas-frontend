@@ -8,7 +8,7 @@ export default function Card(props) {
          <img src={props.img} alt="Review" />
        </div>
        <div className="text-review-bx">
-         <h3>{props.name}</h3>
+         <h1>{props.name}</h1>
           <p>{props.opinion}</p>
        </div>
       </div>
