@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import Header from './header/Header'
 import iconpagedown from "../images/iconpagesdown.png"
 import iconpageup from "../images/iconpagesup.png"
@@ -8,7 +7,6 @@ import Data from './Data'
 import Card from './Card'
 
 function Home() {
-
 
   const randomIndices = [];
 
@@ -34,8 +32,6 @@ function Home() {
     );
   });
 
-
-  
   return (
     <div>
         <Header/>

@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useEffect } from "react";
 import * as C from './style.js'
 import logo from '../../images/logo.png'
 import nome from '../../images/nome.png'
 
 const Header = () => {
-
+    
     return (
         < div className='header'>
             <C.LogoTipo className='logo'>
@@ -23,6 +23,8 @@ const Header = () => {
             </C.Navigation>
         </div>
     );
-}
+
+};
+
 
 export default Header;
