@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import logo from "../../images/logo.png"
 import mask from "../../images/nome.png"
-
+import F_password from './Modal/Modal_Login/ForgotPassword'
 function Login() {
 
     const [user, setUser] = useState("")
     const [password, setPassword] = useState("")
-
+    const [openModal, setOpenModal] = useState(false);
     const handleSubmit = (e) => {
 
         e.preventDefault();
@@ -23,7 +23,7 @@ function Login() {
             <div className='bx'>
               <h1>Login</h1>
               <div className="inputs-lgn">
-              <label>Usuário:</label>
+              <label>Usuário ou  email:</label>
               <input
               placeholder='Enter Your Username'
               type='text'
@@ -42,9 +42,15 @@ function Login() {
                 <p>Não possui uma conta ?</p>
               <p style={{color: "red"}}>Clique Aqui</p>
                 </div>
+                <div className='links'>       
+                <p style={{color: "red", cursor: "pointer"}}onClick={()=>setOpenModal(true)}>Esqueci minha senha.</p>
+                </div>
+                < F_password isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} >
+                 <p>Uma mensagem para trocar a senha foi <br></br> enviada para o seu email.</p>
+                </F_password>
               </div>
             </div>
-            </form>
+          </form>
         </div>
   )
 }
