@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import Header from './header/Header'
 import iconpagedown from "../images/iconpagesdown.png"
 import iconpageup from "../images/iconpagesup.png"
@@ -7,8 +6,8 @@ import circle from "../images/circle.png"
 import Data from './Data'
 import Card from './Card'
 
-function Home() {
 
+function Home() {
 
   const randomIndices = [];
 
@@ -34,8 +33,6 @@ function Home() {
     );
   });
 
-
-  
   return (
     <div>
         <Header/>
@@ -43,7 +40,7 @@ function Home() {
             <div className="text-container">
                   <div className='text-wrapper'>
                     <h1>Início</h1>
-                    <button className='btn-move'><img src={iconpagedown}/></button>
+                      <button className='btn-move'><img src={iconpagedown}/></button>
                   </div>
                 </div>
                 <div className="chart-container">
