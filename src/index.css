@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  height: 13vh;
+  height: 9vh;
   width: 100vw;
   position: sticky;
   top: 0px;
@@ -32,41 +32,43 @@ body {
   align-items: center;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  padding: 0px 121px;
   background-color: rgb(28, 28, 28);
 }
 
-.logo {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  height: 40px;
-  width: 460px;
+.logos {
+  padding: 0px 50px;
 }
 
 .nav {
-  list-style-type: none;
   display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  justify-content: space-around;
-  width: 630px;
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  padding: 0px 10px;
 }
 
-.nav li a {
-  font-size: 30px;
-  color: #ffff;
-  margin: 15px;
+.nav button {
+  outline: none;
+  border: black;
+  background-color: #ff5c01;
+  height: 40px;
+  margin: 5px;
+  width: 125px;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav button:hover {
   transition: 0.5s;
-}
-
-.nav li a:hover {
-  font-size: 35px;
-  border-bottom: 1px solid #fff;
+  width: 140px;
+  height: 50px;
+  font-size: 1.6rem;
 }
 
 .img-header img {
-  width: 85px;
+  width: 80px;
   height: 50px;
   padding-right: 20px;
   cursor: pointer;
@@ -75,19 +77,18 @@ body {
 
 .logo .title img {
   width: 300px;
-  height: 60px;
+  height: 50px;
 }
 
 /* Landing Pages CSS
-
 */
 
 .home {
   position: relative;
   width: 100%;
-  height: 87vh;
+  height: 91vh;
   display: flex;
-  background-image: url(images/background.jpeg);
+  background-image: url(images/landingpage1.png);
 }
 
 .btn-move:hover {
@@ -126,7 +127,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-image: url(images/background.jpeg);
+  background-image: url(images/landingpage2.png);
 }
 
 .products-container {
@@ -147,7 +148,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-image: url(images/background.jpeg);
+  background-image: url(images/landingpage3.png);
 }
 
 .avaliacoes-container {
@@ -158,9 +159,9 @@ body {
 .contato {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 98vh;
   display: flex;
-  background-image: url(images/background.jpeg);
+  background-image: url(images/landingpage4.png);
   border-bottom: 50px solid #816347;
 }
 
@@ -395,6 +396,12 @@ This is the css related to the Registration here!
 .bx .links p {
   font-weight: 400;
   font-size: 30px;
+}
+
+.bx .links button {
+  background-color: transparent;
+  border: none;
+  padding-bottom: 20px;
 }
 
 .logos-register {

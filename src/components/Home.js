@@ -6,6 +6,7 @@ import circle from "../images/circle.png"
 import Data from './Data'
 import Card from './Card'
 
+
 function Home() {
 
   const randomIndices = [];
@@ -39,7 +40,7 @@ function Home() {
             <div className="text-container">
                   <div className='text-wrapper'>
                     <h1>Início</h1>
-                    <button className='btn-move'><img src={iconpagedown}/></button>
+                      <button className='btn-move'><img src={iconpagedown}/></button>
                   </div>
                 </div>
                 <div className="chart-container">

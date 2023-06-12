@@ -2,11 +2,13 @@ import React, { useEffect } from "react";
 import * as C from './style.js'
 import logo from '../../images/logo.png'
 import nome from '../../images/nome.png'
+import {Link} from "react-router-dom"
 
 const Header = () => {
     
     return (
         < div className='header'>
+            <div className="logos">
             <C.LogoTipo className='logo'>
             <div className="img-header">
                 <img src={logo} alt="logo"/>
@@ -15,12 +17,12 @@ const Header = () => {
                    <img src={nome} alt="nome"/>
                 </div>
             </C.LogoTipo>
-
-            <C.Navigation className='nav'>
-                <li><a href='#'>Poções</a></li>
-                <li><a href='#'>Feitiços</a></li>
-                <li><a href='#'>Conta</a></li>
-            </C.Navigation>
+            </div>
+            <div className='nav'>
+                <Link to = {"/enter"}>
+                     <button>Entrar</button>
+                </Link>
+            </div>
         </div>
     );
 
