@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import logo from "../../images/logo.png"
 import mask from "../../images/Mask group.png"
+import {Link} from "react-router-dom"
+
 
 function Register() {
 
@@ -48,7 +50,9 @@ function Register() {
           value={confirmPassword}
           onChange={e => setConfirmPassword(e.target.value)}
           />
-          <button type='submit'>Criar Conta</button>
+          <Link to={"/"} >
+            <button type='submit'>Criar Conta</button>
+          </Link>
           </div>
         </div>
       </form>

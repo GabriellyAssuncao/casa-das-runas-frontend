@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import logo from "../../images/logo.png"
 import mask from "../../images/nome.png"
 import F_password from './Modal/Modal_Login/ForgotPassword'
+import {Link} from "react-router-dom"
+
 function Login() {
 
     const [user, setUser] = useState("")
@@ -37,10 +39,14 @@ function Login() {
               value={password}
               onChange={e => setPassword(e.target.value)}
               />
-             <button type='submit'>Entrar</button>
+              <Link to={"/"}>
+                 <button type='submit'>Entrar</button>
+             </Link>
               <div className='links'>
-                <p>Não possui uma conta ?</p>
-              <p style={{color: "red"}}>Clique Aqui</p>
+                  <p>Não possui uma conta ?</p>
+                <Link to={"/register"}>
+                  <button> <p style={{color: "red"}}>Clique Aqui</p></button>
+              </Link>
                 </div>
                 <div className='links'>       
                 <p style={{color: "red", cursor: "pointer"}}onClick={()=>setOpenModal(true)}>Esqueci minha senha.</p>
