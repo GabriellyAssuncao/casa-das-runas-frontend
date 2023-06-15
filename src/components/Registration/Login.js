@@ -16,13 +16,13 @@ function Login() {
     }
     
   return (
+    <div className="rg-wrapper">
         <div className='registration'>
             <form onSubmit={handleSubmit}>
             <div className='logos'>
               <img src={logo}></img>
               <span><img src={mask}></img></span>
             </div>
-            <div className='bx'>
               <h1>Login</h1>
               <div className="inputs-lgn">
               <label>Usuário ou  email:</label>
@@ -55,8 +55,10 @@ function Login() {
                  <p>Uma mensagem para trocar a senha foi <br></br> enviada para o seu email.</p>
                 </F_password>
               </div>
-            </div>
           </form>
+        </div>
+        <div className="rg-img">
+        </div>
         </div>
   )
 }

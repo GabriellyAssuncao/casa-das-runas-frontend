@@ -17,13 +17,13 @@ function Register() {
   }
 
   return (
+   <div className='rg-wrapper'>
     <div className='registration'>
       <form onSubmit={handleRegister}>
         <div className="logos">
               <img src={logo}></img>
               <span><img src={mask}></img></span>
         </div>
-        <div className="bx">
           <h1 style={{ margin: '0'}}>Criar sua Conta:</h1>
           <label>Usuário:</label>
           <div className="inputs-rgs">
@@ -54,8 +54,10 @@ function Register() {
             <button type='submit'>Criar Conta</button>
           </Link>
           </div>
-        </div>
       </form>
+    </div>
+    <div className='rg-img'>
+      </div>
     </div>
   )
 }

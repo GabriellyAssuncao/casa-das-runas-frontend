@@ -23,7 +23,7 @@ body {
 
 .header {
   height: 9vh;
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0px;
   z-index: 1;
@@ -86,7 +86,7 @@ body {
 .home {
   position: relative;
   width: 100%;
-  height: 91vh;
+  height: 100vh;
   display: flex;
   background-image: url(images/landingpage1.png);
 }
@@ -106,7 +106,7 @@ body {
 
 .chart-wrapper {
   width: 45rem;
-  height: 45rem;
+  height: 44rem;
   background-color: #ff5c01;
   border-radius: 10px;
   padding: 50px;
@@ -133,6 +133,7 @@ body {
 .products-container {
   display: flex;
   width: 100%;
+  padding-top: 100px;
 }
 
 .products-container .block-1 {
@@ -141,6 +142,8 @@ body {
 
 .products-container img {
   cursor: pointer;
+  width: 350px;
+  height: 350px;
 }
 
 .avaliacoes {
@@ -159,7 +162,7 @@ body {
 .contato {
   position: relative;
   width: 100%;
-  height: 98vh;
+  height: 100vh;
   display: flex;
   background-image: url(images/landingpage4.png);
   border-bottom: 50px solid #816347;
@@ -179,6 +182,10 @@ body {
   color: #ffff;
   font-size: 3.5rem;
   font-weight: 100;
+}
+
+.avaliacoes-container {
+  padding-top: 50px;
 }
 
 .reviews {
@@ -346,7 +353,7 @@ This is the css related to the Registration here!
   flex-direction: column;
 }
 
-.bx .inputs-lgn input[type="text"] {
+.inputs-lgn input[type="text"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -358,7 +365,7 @@ This is the css related to the Registration here!
   padding: 10px;
 }
 
-.bx .inputs-lgn input[type="password"] {
+.inputs-lgn input[type="password"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -388,17 +395,17 @@ This is the css related to the Registration here!
   background-color: #523c28;
 }
 
-.bx .links {
+.links {
   display: flex;
   gap: 15px;
 }
 
-.bx .links p {
+.links p {
   font-weight: 400;
   font-size: 30px;
 }
 
-.bx .links button {
+.links button {
   background-color: transparent;
   border: none;
   padding-bottom: 20px;
@@ -417,7 +424,7 @@ This is the css related to the Registration here!
   align-items: center;
 }
 
-.bx .inputs-rgs input[type="text"] {
+.inputs-rgs input[type="text"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -429,7 +436,7 @@ This is the css related to the Registration here!
   padding: 10px;
 }
 
-.bx .inputs-rgs input[type="password"] {
+.inputs-rgs input[type="password"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -471,7 +478,7 @@ This is the css related to the Modal here!
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(0,0,0, 0.7);
+  background-color: rgb(0, 0, 0, 0.7);
   z-index: 1000;
 }
 
