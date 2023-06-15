@@ -290,16 +290,28 @@ This is the css related to the Registration here!
 
 */
 
+.rg-wrapper {
+  display: flex;
+}
+
+.rg-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/registration.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .registration {
   position: relative;
-  max-width: 100%;
+  width: 50%;
   height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   padding: 15px;
-  background-image: url("./images/background.jpeg");
+  background-color: #1c1c1c;
 }
 
 .registration .logos {
@@ -338,13 +350,15 @@ This is the css related to the Registration here!
 .registration h1 {
   font-size: 3.5rem;
   font-weight: 300;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ffff;
 }
 
 .registration label {
   font-size: 35px;
   padding: 10px;
+  color: #ffff;
 }
 
 .inputs-lgn {
@@ -363,6 +377,7 @@ This is the css related to the Registration here!
   font-size: 20px;
   color: 0000;
   padding: 10px;
+  color: #000;
 }
 
 .inputs-lgn input[type="password"] {
@@ -376,19 +391,7 @@ This is the css related to the Registration here!
   color: 0000;
   margin-bottom: 40px;
   padding: 10px;
-}
-
-.bx button {
-  text-align: center;
-  width: 170px;
-  height: 60px;
-  outline: none;
-  border: 3px solid #000;
-  border-radius: 5px;
-  font-size: 36px;
-  background-color: #816347;
-  cursor: pointer;
-  margin-bottom: 20px;
+  color: #000;
 }
 
 .bx button:hover {
@@ -397,12 +400,15 @@ This is the css related to the Registration here!
 
 .links {
   display: flex;
+  align-items: center;
+  text-align: center;
   gap: 15px;
 }
 
 .links p {
   font-weight: 400;
   font-size: 30px;
+  color: #ffff;
 }
 
 .links button {
@@ -434,6 +440,7 @@ This is the css related to the Registration here!
   font-size: 20px;
   color: 0000;
   padding: 10px;
+  color: #000;
 }
 
 .inputs-rgs input[type="password"] {
@@ -446,11 +453,37 @@ This is the css related to the Registration here!
   font-size: 20px;
   color: 0000;
   padding: 10px;
+  color: #000;
 }
 
 .inputs-rgs button {
   margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #816347;
+  font-size: 1.5rem;
+  border: none;
 }
+
+.inputs-rgs button:hover {
+  background-color: #523c28;
+}
+
+.inputs-lgn button {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #816347;
+  font-size: 1.5rem;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.inputs-lgn button:hover {
+  background-color: #523c28;
+}
+
 /* Modal/Pop-ups
 
 This is the css related to the Modal here!

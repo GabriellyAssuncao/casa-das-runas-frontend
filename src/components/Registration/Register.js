@@ -9,6 +9,7 @@ function Register() {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [email, setEmail] = useState("")
 
   const handleRegister = (e) => {
 
@@ -26,13 +27,21 @@ function Register() {
         </div>
           <h1 style={{ margin: '0'}}>Criar sua Conta:</h1>
           <label>Usuário:</label>
-          <div className="inputs-rgs">
+        <div className="inputs-rgs">
           <input
           type='text'
             placeholder='Enter Your Username'
             id='user'
             value={user}
             onChange={e => setUser(e.target.value)}
+          />
+            <label>Email:</label>
+          <input
+            type='text'
+            placeholder='Enter Your Email'
+            id='email'
+            value={email}
+            onChange={e => setEmail(e.target.value)}
           />
           <label>Senha:</label>
           <input

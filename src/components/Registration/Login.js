@@ -45,7 +45,7 @@ function Login() {
               <div className='links'>
                   <p>Não possui uma conta ?</p>
                 <Link to={"/register"}>
-                  <button> <p style={{color: "red"}}>Clique Aqui</p></button>
+                  <p style={{color: "red"}}>Clique Aqui</p>
               </Link>
                 </div>
                 <div className='links'>       
