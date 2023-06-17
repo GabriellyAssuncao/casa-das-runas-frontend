@@ -1,4 +1,5 @@
 import Header from './header/Header'
+import Sidebar from './sidebar';
 import iconpagedown from "../images/iconpagesdown.png"
 import iconpageup from "../images/iconpagesup.png"
 import desenhowrapper from "../images/desenhowrapper.png"
@@ -17,15 +18,15 @@ function Home() {
 
   while (randomIndices.length < 3) {
     const randomIndex = Math.floor(Math.random() * Data.length);
-  
+
     if (!randomIndices.includes(randomIndex)) {
       randomIndices.push(randomIndex);
     }
   }
-  
+
   const cards = randomIndices.map((randomIndex, index) => {
     const randomItem = Data[randomIndex];
-  
+
     return (
       <div key={index}>
         <Card
@@ -49,11 +50,12 @@ function Home() {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-    
+
   return (
     <div>
         <Header/>
-            <div className="home" ref={divRefs.div1}> 
+        <Sidebar/>
+            <div className="home" ref={divRefs.div1}>
             <div className="text-container">
                   <div className='text-wrapper'>
                     <h1>Início</h1>
@@ -62,7 +64,7 @@ function Home() {
                 </div>
                 <div className="chart-container">
                   <div className="chart-wrapper">
-                      <p>Descubra os segredos do universo com as poções mágicas e feitiços 
+                      <p>Descubra os segredos do universo com as poções mágicas e feitiços
                         poderosos da Casa das Runas, onde o futuro se revela em cada estrela.</p>
                       <div className="img-bx">
                         <img src={desenhowrapper}/>
@@ -114,9 +116,9 @@ function Home() {
                 </div>
                 <div className="contato-container">
                   <h1>
-                    Em uma noite de lua cheia, deseje do fundo do seu coração 
-                    ajuda para os seus problemas, e clame por socorro de um dos 
-                    magos da casa das runas. 
+                    Em uma noite de lua cheia, deseje do fundo do seu coração
+                    ajuda para os seus problemas, e clame por socorro de um dos
+                    magos da casa das runas.
                   </h1>
                   <h1>
                     Ou mande um e-mail:
