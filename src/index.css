@@ -12,7 +12,6 @@ code {
 
 body {
   width: 100%;
-  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -24,7 +23,7 @@ body {
 .header {
   height: 9vh;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 1;
   display: flex;
@@ -84,7 +83,6 @@ body {
 */
 
 .home {
-  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -147,7 +145,6 @@ body {
 }
 
 .avaliacoes {
-  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -160,7 +157,6 @@ body {
 }
 
 .contato {
-  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;

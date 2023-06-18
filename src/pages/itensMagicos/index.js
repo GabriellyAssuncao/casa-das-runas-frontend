@@ -1,7 +1,15 @@
-import * as C from './style.js';
+import Header from '../../components/header/Header.js';
+import Sidebar from '../../components/sidebar/index.js';
+import * as C from './style.js'
 
 const ItensMagicos = () =>{
-  return <C.TextStyle>Texto</C.TextStyle>
+  return (
+    <>
+      <Header />
+      <Sidebar />
+      <C.TextStyle>Texto</C.TextStyle>
+    </>
+  )
 }
 
 export default ItensMagicos;

@@ -4,12 +4,24 @@ import {Link} from "react-router-dom"
 const Sidebar = () => {
   return (
     <div>
-      <Link to={"/pocoes"}>
-        <C.Link>Poções</C.Link>
-      </Link>
-      <Link to={"/itensmagicos"}>
-        <C.Link>Itens mágicos</C.Link>
-      </Link>
+      <C.StyleBar>
+        <C.Link>
+          <Link to={"/pocoes"}>
+            Poções
+          </Link>
+        </C.Link>
+        <C.Link>
+          <Link to={"/itensmagicos"}>
+            Itens Mágicos
+          </Link>
+        </C.Link>
+        <C.Link>
+          <Link to={"/feiticos"}>
+            Feitiços
+          </Link>
+        </C.Link>
+      </C.StyleBar>
+
     </div>
   )
 }
