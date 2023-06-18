@@ -58,6 +58,7 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .nav button:hover {
@@ -144,6 +145,7 @@ body {
   cursor: pointer;
   width: 350px;
   height: 350px;
+  margin: 10px;
 }
 
 .avaliacoes {
@@ -191,7 +193,7 @@ body {
 .reviews {
   width: 100%;
   height: 100%;
-  padding: 25px;
+  padding: 25px 0px;
 }
 
 .reviewBx {
@@ -276,12 +278,15 @@ These classes are shared, they're related to the text classes;
 .btn-move img:hover {
   width: 240px;
   height: 210px;
+  transition: 0.5s;
 }
 
 .btn-move {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  width: 240px;
+  height: 210px;
 }
 
 /* Registration 
@@ -525,56 +530,6 @@ This is the css related to the mobile system
 */
 
 @media (max-width: 600px) {
-  .registration {
-    padding: 15px;
-  }
-  .registration .bx {
-    width: 24rem;
-    height: 35rem;
-    margin: 20px;
-  }
-
-  .bx .inputs-rgs input[type="text"] {
-    width: 300px;
-  }
-
-  .bx .inputs-rgs input[type="password"] {
-    width: 300px;
-  }
-
-  .registration span img {
-    margin: 0;
-    padding: 10px 0px;
-    width: 80%;
-  }
-
-  .registration label {
-    font-size: 25px;
-    padding: 10px;
-  }
-
-  .inputs-rgs button {
-    margin-top: 40px;
-  }
-
-  .bx button {
-    width: 120px;
-    height: 50px;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-
-  .bx .inputs-lgn input[type="text"] {
-    width: 300px;
-    font-size: 15px;
-  }
-
-  .bx .inputs-lgn input[type="password"] {
-    width: 300px;
-    font-size: 15px;
-  }
-
-  .bx .links p {
-    font-size: 20px;
-  }
+  /*
+ */
 }
