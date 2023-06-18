@@ -33,6 +33,7 @@ body {
   -webkit-box-pack: justify;
   justify-content: space-between;
   background-color: rgb(28, 28, 28);
+  z-index: 1000;
 }
 
 .logos {
@@ -161,31 +162,6 @@ body {
   width: 100%;
 }
 
-.contato {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  background-image: url(images/landingpage4.png);
-  border-bottom: 50px solid #816347;
-}
-
-.contato-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.contato-container h1 {
-  width: 80%;
-  color: #ffff;
-  font-size: 3.5rem;
-  font-weight: 100;
-}
-
 .avaliacoes-container {
   padding-top: 50px;
 }
@@ -236,6 +212,147 @@ body {
 }
 .text-review-bx p {
   font-size: 1.3rem;
+}
+
+.contato {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/landingpage4.png);
+}
+
+.contato-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contato-container h1 {
+  width: 80%;
+  color: #ffff;
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+.beam {
+  display: flex;
+  position: relative;
+  z-index: 999999;
+  background-color: #816347;
+  width: 100%;
+  height: 50px;
+}
+
+.sidebar {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  color: #ffff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.button-sidebar {
+  padding-left: 35px;
+  padding-top: 15px;
+  position: fixed;
+  z-index: 999;
+}
+
+.button-sidebar button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.sidebar p {
+  padding: 20px 0px;
+}
+
+.sidebar .sobre {
+  font-size: 1.5rem;
+}
+
+.links-sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  height: 85%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.side-wrapper p {
+  transition: 0.5s;
+  margin: 15px;
+  padding: 0px;
+}
+
+.side-wrapper p:hover {
+  border-bottom: 1px solid #ffff;
+  transition: 0.1s;
+}
+
+.links-sidebar button {
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Spells Section 
+*/
+
+.feiticos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #ffff;
+  width: 100%;
+}
+
+.feiticos-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feiticos-content form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Shared Classes
@@ -401,6 +518,7 @@ This is the css related to the Registration here!
 
 .bx button:hover {
   background-color: #523c28;
+  cursor: pointer;
 }
 
 .links {
@@ -469,6 +587,7 @@ This is the css related to the Registration here!
   background-color: #816347;
   font-size: 1.5rem;
   border: none;
+  cursor: pointer;
 }
 
 .inputs-rgs button:hover {
@@ -483,6 +602,7 @@ This is the css related to the Registration here!
   font-size: 1.5rem;
   border: none;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .inputs-lgn button:hover {

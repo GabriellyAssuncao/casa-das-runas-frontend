@@ -59,7 +59,7 @@ function Register() {
           value={confirmPassword}
           onChange={e => setConfirmPassword(e.target.value)}
           />
-          <Link to={"/"} >
+          <Link to={"/enter"} >
             <button type='submit'>Criar Conta</button>
           </Link>
           </div>

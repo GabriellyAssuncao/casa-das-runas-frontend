@@ -9,7 +9,8 @@ import product2 from  "../../src/images/products2.png"
 import product3 from  "../../src/images/product3.png"
 import product4 from  "../../src/images/product4.png"
 import React, {useRef} from 'react'
-
+import Sidebar from './Sidebar'
+import Beam from './Beam'
 
 function Home() {
 
@@ -53,6 +54,7 @@ function Home() {
   return (
     <div>
         <Header/>
+        <Sidebar/>
             <div className="home" ref={divRefs.div1}> 
             <div className="text-container">
                   <div className='text-wrapper'>
@@ -106,6 +108,7 @@ function Home() {
                 </div>
               </div>
               <div className='contato' ref={divRefs.div4}>
+                <div className='contato-wrapper'>
                 <div className="text-container">
                   <div className="text-wrapper">
                   <button className='btn-move' onClick={() => scrollToDiv(divRefs.div3)}><img src={iconpageup}/></button>
@@ -123,6 +126,8 @@ function Home() {
                     casadasrunas@alvorecer.feudal.ds
                   </h1>
                 </div>
+                </div>
+                <Beam/>
               </div>
        </div>
   )
