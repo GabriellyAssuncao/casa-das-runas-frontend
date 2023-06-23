@@ -3,6 +3,7 @@ import Header from '../../components/header/Header.js';
 import Sidebar from '../../components/sidebar/index.js';
 import ItemsList from '../../components/itemsList/index.js';
 import FilterBar from '../../components/filterBar/index.js';
+import FilterSide from '../../components/filterSide/index.js';
 
 
 const Pocoes = () =>{
@@ -15,9 +16,7 @@ const Pocoes = () =>{
             <FilterBar></FilterBar>
             <ItemsList></ItemsList>
           </C.ItemsDisplay>
-          <C.Filter>
-            Texto
-          </C.Filter>
+          <FilterSide />
         </C.Content>
     </>
   )

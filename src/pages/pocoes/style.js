@@ -7,8 +7,8 @@ export const TextStyle = styled.span`
 export const Content = styled.main`
   margin-top: 9vh;
   height: 91vh;
-  margin-left: 160px;
-  padding-left: 15px;
+  background-color: #0E0C0A;
+  padding-left: 175px;
   display: flex;
 `
 export const Filter = styled.section`
