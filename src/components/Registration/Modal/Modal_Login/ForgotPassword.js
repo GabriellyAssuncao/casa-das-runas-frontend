@@ -5,7 +5,8 @@ const BUTTON_STYLE = {
   backgroundColor: '#b79e80',
   position: 'relative',
   position: 'relative',
-  top: '60px',  
+  top: '20px',  
+  border: '2px solid #000' 
 }
 
 
