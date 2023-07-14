@@ -9,7 +9,7 @@ import product2 from  "../../src/images/products2.png"
 import product3 from  "../../src/images/product3.png"
 import product4 from  "../../src/images/product4.png"
 import React, {useRef} from 'react'
-import Sidebar from './Sidebar'
+// import Sidebar from './Sidebar'
 import Beam from './Beam'
 
 function Home() {
