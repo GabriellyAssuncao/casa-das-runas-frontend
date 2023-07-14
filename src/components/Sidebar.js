@@ -26,10 +26,10 @@ function Sidebar() {
              <Link to="/feiticos">
                     <p>Feiticos</p>
                 </Link>
-             <Link to="/">
+             <Link to="/itensmagicos">
                  <p>Items</p>
              </Link>
-                 <Link to="/">
+                 <Link to="/pocoes">
                      <p>Poções</p>
               </Link>
              </div>

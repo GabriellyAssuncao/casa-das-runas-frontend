@@ -1,6 +1,6 @@
 import * as C from './style.js';
 import Header from '../../components/header/Header.js';
-import Sidebar from '../../components/sidebar/index.js';
+import Sidebar from '../../components/Sidebar.js';
 import ItemsList from '../../components/itemsList/index.js';
 import FilterBar from '../../components/filterBar/index.js';
 import FilterSide from '../../components/filterSide/index.js';
