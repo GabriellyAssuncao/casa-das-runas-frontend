@@ -17,11 +17,11 @@ COPY . .
 RUN yarn build
 
 # Configurações de ambiente
-ENV PORT=3000
+ENV PORT=8080
 ENV NODE_ENV=production
 
 # Expõe a porta do servidor da aplicação
-EXPOSE 3000
+EXPOSE 8080
 
 # Comando para iniciar a aplicação
 CMD ["yarn", "start"]

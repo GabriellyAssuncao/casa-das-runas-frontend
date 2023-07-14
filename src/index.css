@@ -12,7 +12,6 @@ code {
 
 body {
   width: 100%;
-  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -23,8 +22,8 @@ body {
 
 .header {
   height: 9vh;
-  width: 100vw;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0px;
   z-index: 1;
   display: flex;
@@ -33,6 +32,7 @@ body {
   -webkit-box-pack: justify;
   justify-content: space-between;
   background-color: rgb(28, 28, 28);
+  z-index: 1000;
 }
 
 .logos {
@@ -58,6 +58,7 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .nav button:hover {
@@ -84,9 +85,8 @@ body {
 */
 
 .home {
-  position: relative;
   width: 100%;
-  height: 91vh;
+  height: 100vh;
   display: flex;
   background-image: url(images/landingpage1.png);
 }
@@ -106,7 +106,7 @@ body {
 
 .chart-wrapper {
   width: 45rem;
-  height: 45rem;
+  height: 44rem;
   background-color: #ff5c01;
   border-radius: 10px;
   padding: 50px;
@@ -133,6 +133,7 @@ body {
 .products-container {
   display: flex;
   width: 100%;
+  padding-top: 100px;
 }
 
 .products-container .block-1 {
@@ -141,10 +142,12 @@ body {
 
 .products-container img {
   cursor: pointer;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
 }
 
 .avaliacoes {
-  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -157,9 +160,8 @@ body {
 }
 
 .contato {
-  position: relative;
   width: 100%;
-  height: 98vh;
+  height: 100vh;
   display: flex;
   background-image: url(images/landingpage4.png);
   border-bottom: 50px solid #816347;
@@ -181,10 +183,14 @@ body {
   font-weight: 100;
 }
 
+.avaliacoes-container {
+  padding-top: 50px;
+}
+
 .reviews {
   width: 100%;
   height: 100%;
-  padding: 25px;
+  padding: 25px 0px;
 }
 
 .reviewBx {
@@ -229,6 +235,147 @@ body {
   font-size: 1.3rem;
 }
 
+.contato {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/landingpage4.png);
+}
+
+.contato-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contato-container h1 {
+  width: 80%;
+  color: #ffff;
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+.beam {
+  display: flex;
+  position: relative;
+  z-index: 999999;
+  background-color: #816347;
+  width: 100%;
+  height: 50px;
+}
+
+.sidebar {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  color: #ffff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.button-sidebar {
+  padding-left: 35px;
+  padding-top: 15px;
+  position: fixed;
+  z-index: 999;
+}
+
+.button-sidebar button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.sidebar p {
+  padding: 20px 0px;
+}
+
+.sidebar .sobre {
+  font-size: 1.5rem;
+}
+
+.links-sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  height: 85%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.side-wrapper p {
+  transition: 0.5s;
+  margin: 15px;
+  padding: 0px;
+}
+
+.side-wrapper p:hover {
+  border-bottom: 1px solid #ffff;
+  transition: 0.1s;
+}
+
+.links-sidebar button {
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Spells Section
+*/
+
+.feiticos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #ffff;
+  width: 100%;
+}
+
+.feiticos-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feiticos-content form {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Shared Classes
 
 These classes are shared, they're related to the text classes;
@@ -269,30 +416,45 @@ These classes are shared, they're related to the text classes;
 .btn-move img:hover {
   width: 240px;
   height: 210px;
+  transition: 0.5s;
 }
 
 .btn-move {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  width: 240px;
+  height: 210px;
 }
 
-/* Registration 
+/* Registration
 
 This is the css related to the Registration here!
 
 */
 
+.rg-wrapper {
+  display: flex;
+}
+
+.rg-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/registration.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .registration {
   position: relative;
-  max-width: 100%;
+  width: 50%;
   height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   padding: 15px;
-  background-image: url("./images/background.jpeg");
+  background-color: #1c1c1c;
 }
 
 .registration .logos {
@@ -331,13 +493,15 @@ This is the css related to the Registration here!
 .registration h1 {
   font-size: 3.5rem;
   font-weight: 300;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ffff;
 }
 
 .registration label {
   font-size: 35px;
   padding: 10px;
+  color: #ffff;
 }
 
 .inputs-lgn {
@@ -346,7 +510,7 @@ This is the css related to the Registration here!
   flex-direction: column;
 }
 
-.bx .inputs-lgn input[type="text"] {
+.inputs-lgn input[type="text"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -356,9 +520,10 @@ This is the css related to the Registration here!
   font-size: 20px;
   color: 0000;
   padding: 10px;
+  color: #000;
 }
 
-.bx .inputs-lgn input[type="password"] {
+.inputs-lgn input[type="password"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -369,36 +534,28 @@ This is the css related to the Registration here!
   color: 0000;
   margin-bottom: 40px;
   padding: 10px;
-}
-
-.bx button {
-  text-align: center;
-  width: 170px;
-  height: 60px;
-  outline: none;
-  border: 3px solid #000;
-  border-radius: 5px;
-  font-size: 36px;
-  background-color: #816347;
-  cursor: pointer;
-  margin-bottom: 20px;
+  color: #000;
 }
 
 .bx button:hover {
   background-color: #523c28;
+  cursor: pointer;
 }
 
-.bx .links {
+.links {
   display: flex;
+  align-items: center;
+  text-align: center;
   gap: 15px;
 }
 
-.bx .links p {
+.links p {
   font-weight: 400;
   font-size: 30px;
+  color: #ffff;
 }
 
-.bx .links button {
+.links button {
   background-color: transparent;
   border: none;
   padding-bottom: 20px;
@@ -417,7 +574,7 @@ This is the css related to the Registration here!
   align-items: center;
 }
 
-.bx .inputs-rgs input[type="text"] {
+.inputs-rgs input[type="text"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -427,9 +584,10 @@ This is the css related to the Registration here!
   font-size: 20px;
   color: 0000;
   padding: 10px;
+  color: #000;
 }
 
-.bx .inputs-rgs input[type="password"] {
+.inputs-rgs input[type="password"] {
   border: none;
   width: 450px;
   height: 50px;
@@ -439,69 +597,141 @@ This is the css related to the Registration here!
   font-size: 20px;
   color: 0000;
   padding: 10px;
+  color: #000;
 }
 
 .inputs-rgs button {
   margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #816347;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
 }
 
-/* 
+.inputs-rgs button:hover {
+  background-color: #523c28;
+}
 
-This is the css related to the mobile system 
+.inputs-lgn button {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #816347;
+  font-size: 1.5rem;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.inputs-lgn button:hover {
+  background-color: #523c28;
+}
+
+/* Modal/Pop-ups
+
+This is the css related to the Modal here!
 
 */
 
-@media (max-width: 600px) {
-  .registration {
-    padding: 15px;
-  }
-  .registration .bx {
-    width: 24rem;
-    height: 35rem;
-    margin: 20px;
-  }
+.Modal_style {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 400px;
+  padding-top: 100px;
+  background-color: #816347;
+  border-radius: 25px;
+  color: white;
+  font-size: 35px;
+  border: 3px solid #000;
+}
 
-  .bx .inputs-rgs input[type="text"] {
-    width: 300px;
-  }
+.Background_style {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 1000;
+}
 
-  .bx .inputs-rgs input[type="password"] {
-    width: 300px;
-  }
+.Font_style {
+  color: black;
+}
+/*
 
-  .registration span img {
-    margin: 0;
-    padding: 10px 0px;
-    width: 80%;
-  }
+This is the css related to the mobile system
 
-  .registration label {
-    font-size: 25px;
-    padding: 10px;
-  }
+*/
 
-  .inputs-rgs button {
-    margin-top: 40px;
-  }
+@media (max-width: 1000px) {
+  /*
+  registration
+ */
+ .registration {
+  position: fixed;
+  width: 100%;
+  height: 180vh;
+  padding: 1px;
+ }
+ .registration h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 2.5rem;
+}
+.registration label {
+  font-size: 25px;
+  padding: 10px;
+  color: #ffff;
+}
+.registration span img {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+ .inputs-lgn input[type="text"] {
+ width: 80%;
 
-  .bx button {
-    width: 120px;
-    height: 50px;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
+ }
+ .inputs-lgn input[type="password"] {
+ width: 80%;
+}
+ .links {
+  gap: 10px;
+ }
+ .links p {
+  font-size: 25px;
+ }
+ .inputs-rgs input[type="text"] {
+  width: 80%;
 
-  .bx .inputs-lgn input[type="text"] {
-    width: 300px;
-    font-size: 15px;
-  }
-
-  .bx .inputs-lgn input[type="password"] {
-    width: 300px;
-    font-size: 15px;
-  }
-
-  .bx .links p {
-    font-size: 20px;
-  }
+}
+.inputs-rgs input[type="password"] {
+  width: 80%;
+}
+/*
+Modal/Pop-ups
+*/
+.Modal_style {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 300px;
+  padding-top: 100px;
+  background-color: #816347;
+  border-radius: 25px;
+  color: white;
+  font-size: 25px;
+  border: 3px solid #000;
+}
 }
