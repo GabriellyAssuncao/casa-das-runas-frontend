@@ -12,7 +12,6 @@ code {
 
 body {
   width: 100%;
-  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -24,7 +23,7 @@ body {
 .header {
   height: 9vh;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 1;
   display: flex;
@@ -86,7 +85,6 @@ body {
 */
 
 .home {
-  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -150,7 +148,6 @@ body {
 }
 
 .avaliacoes {
-  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -160,6 +157,30 @@ body {
 .avaliacoes-container {
   display: flex;
   width: 100%;
+}
+
+.contato {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url(images/landingpage4.png);
+  border-bottom: 50px solid #816347;
+}
+
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contato-container h1 {
+  width: 80%;
+  color: #ffff;
+  font-size: 3.5rem;
+  font-weight: 100;
 }
 
 .avaliacoes-container {
@@ -327,7 +348,7 @@ body {
   bottom: 0;
 }
 
-/* Spells Section 
+/* Spells Section
 */
 
 .feiticos {
@@ -406,7 +427,7 @@ These classes are shared, they're related to the text classes;
   height: 210px;
 }
 
-/* Registration 
+/* Registration
 
 This is the css related to the Registration here!
 
@@ -643,9 +664,9 @@ This is the css related to the Modal here!
 .Font_style {
   color: black;
 }
-/* 
+/*
 
-This is the css related to the mobile system 
+This is the css related to the mobile system
 
 */
 
@@ -691,12 +712,12 @@ This is the css related to the mobile system
  }
  .inputs-rgs input[type="text"] {
   width: 80%;
-  
+
 }
 .inputs-rgs input[type="password"] {
   width: 80%;
 }
-/* 
+/*
 Modal/Pop-ups
 */
 .Modal_style {
